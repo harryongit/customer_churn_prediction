@@ -1,35 +1,87 @@
 # Customer Churn Prediction Project
 
-This project implements a machine learning solution for predicting customer churn using historical customer data. It demonstrates both ML engineering capabilities and business analysis skills.
+## Overview
+The **Customer Churn Prediction Project** aims to predict customer churn based on historical data. This project utilizes machine learning techniques, primarily Random Forest, to forecast whether a customer will leave the company or not. It not only demonstrates ML engineering expertise but also focuses on deriving business insights that can be actionable for customer retention strategies.
+
+![img](https://github.com/user-attachments/assets/17f2817c-ac87-4308-ab11-fcbee182fe98)
 
 ## Features
-- Data preprocessing and feature engineering
-- Machine learning model implementation using RandomForest
-- Model evaluation and visualization
-- Business insights generation
-- Modular and maintainable code structure
-- Unit tests
+- **Data Preprocessing & Feature Engineering**: Cleaning and transforming raw data into a format suitable for model training.
+- **Machine Learning Model**: Implementation of the Random Forest algorithm for churn prediction.
+- **Model Evaluation**: Use of performance metrics such as accuracy, precision, recall, and AUC to evaluate the model's performance.
+- **Visualization**: Graphical representation of important metrics and model results to provide clarity on business insights.
+- **Business Insights**: Actionable insights generated from model outputs to guide strategic decisions around customer retention.
+- **Modular Code Structure**: Well-organized and modular code base for easier understanding and maintainability.
+- **Unit Tests**: Ensuring the correctness and robustness of the code through unit testing.
 
 ## Installation
+
+To get started, clone the repository and install the dependencies by running:
+
 ```bash
 pip install -r requirements.txt
 ```
 
+Ensure that you have Python (version 3.7 or higher) and `pip` installed.
+
 ## Usage
+
+After installing the dependencies, you can run the project using the following command:
+
 ```bash
 python main.py
 ```
 
+This will trigger the full pipeline, from data preprocessing to model training, evaluation, and visualization.
+
+### Optional: Running Jupyter Notebooks
+For exploratory data analysis, you can explore the provided Jupyter notebooks located in the `notebooks/` directory. These notebooks contain detailed steps for analyzing the data and feature engineering.
+
 ## Project Structure
-- `data/`: Contains the customer dataset
-- `notebooks/`: Jupyter notebooks for exploratory analysis
-- `src/`: Source code for the project
-- `tests/`: Unit tests
-- `main.py`: Main script to run the project
-- `requirements.txt`: Project dependencies
+
+The project is organized into the following directory structure:
+
+```
+Customer_Churn_Prediction/
+│
+├── data/                    # Contains the raw customer dataset for analysis
+├── notebooks/               # Jupyter notebooks for exploratory data analysis (EDA)
+├── src/                     # Source code for data processing, model training, and evaluation
+│   ├── preprocessing.py     # Data preprocessing and feature engineering
+│   ├── model.py             # Model implementation and training (Random Forest)
+│   ├── evaluation.py        # Model evaluation metrics and results
+│   ├── business_insights.py # Generation of actionable insights
+│
+├── tests/                   # Unit tests for key components of the code
+│   ├── test_preprocessing.py
+│   ├── test_model.py
+│   ├── test_evaluation.py
+│
+├── main.py                  # Main script to execute the project workflow
+├── requirements.txt         # Project dependencies (Python packages)
+└── README.md                # Project documentation (this file)
+```
+
+### Key Files:
+- `data/`: This directory contains the raw and processed customer data.
+- `notebooks/`: Jupyter notebooks to aid in exploratory data analysis (EDA) and visualizations.
+- `src/`: Contains the source code that handles data preprocessing, feature engineering, model implementation, and performance evaluation.
+- `tests/`: Contains unit tests to ensure the correctness of each module in the project.
+- `main.py`: The entry point for executing the churn prediction pipeline.
+- `requirements.txt`: A list of Python dependencies necessary for running the project.
 
 ## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Contributions to this project are welcome! If you have an idea for an improvement, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature-name`).
+3. Commit your changes (`git commit -am 'Add new feature or fix'`).
+4. Push to the branch (`git push origin feature/your-feature-name`).
+5. Open a pull request for review.
+
+Before submitting a major change, please open an issue to discuss the potential change.
 
 ## License
-MIT
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
