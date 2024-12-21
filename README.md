@@ -44,22 +44,27 @@ The project is organized into the following directory structure:
 ```
 Customer_Churn_Prediction/
 │
-├── data/                    # Contains the raw customer dataset for analysis
-├── notebooks/               # Jupyter notebooks for exploratory data analysis (EDA)
-├── src/                     # Source code for data processing, model training, and evaluation
-│   ├── preprocessing.py     # Data preprocessing and feature engineering
-│   ├── model.py             # Model implementation and training (Random Forest)
-│   ├── evaluation.py        # Model evaluation metrics and results
-│   ├── business_insights.py # Generation of actionable insights
+├── data/                         # Directory containing the customer dataset
+│   └── customer_data.csv          # Raw customer dataset
 │
-├── tests/                   # Unit tests for key components of the code
-│   ├── test_preprocessing.py
-│   ├── test_model.py
-│   ├── test_evaluation.py
+├── notebooks/                    # Jupyter notebooks for exploratory data analysis (EDA)
+│   └── exploratory_analysis.ipynb # EDA and visualizations of the dataset
 │
-├── main.py                  # Main script to execute the project workflow
-├── requirements.txt         # Project dependencies (Python packages)
-└── README.md                # Project documentation (this file)
+├── src/                          # Source code for data preprocessing, model, and evaluation
+│   ├── __init__.py               # Initialize the source code package
+│   ├── data_preprocessing.py     # Script for cleaning and preprocessing data
+│   ├── evaluation.py             # Script for evaluating the model's performance
+│   ├── feature_engineering.py    # Script for feature extraction and selection
+│   └── model.py                 # Script for model implementation and training
+│
+├── tests/                        # Unit tests for key modules
+│   └── test_preprocessing.py     # Unit tests for data preprocessing
+│
+├── main.py                       # Main entry point to execute the churn prediction pipeline
+├── requirements.txt              # List of required Python dependencies
+├── LICENSE                       # Project license file
+└── README.md                     # This README file
+
 ```
 
 ### Key Files:
